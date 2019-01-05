@@ -11,8 +11,12 @@ class Person extends Component {
         console.log('[Person.js] Inside componentWillMount()')
     }
 
-    
+    componentDidMount() {
+        console.log('[Person.js] Inside componentDidMount()');
+    }
+
     render () {
+        console.log('[Person.js] Inside Render()');
         return (
             <div className={classes.Person}>     
                 <p onClick={this.props.click}>I'm a {this.props.name}. I am {this.props.age} year old</p>
